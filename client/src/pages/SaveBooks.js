@@ -27,7 +27,7 @@ class SaveBook extends Component {
         return (
             <Container fluid className="container">
                 <Jumbotron>
-                <h1 className="text-black">View Your Saved Books Below</h1>
+                <h1 className="text-white">View Your Saved Books Below</h1>
                 </Jumbotron>
                 <Container>
                     <SavedResult savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
