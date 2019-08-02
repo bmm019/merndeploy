@@ -17,7 +17,8 @@ class SearchBooks extends Component {
 
     //function to take value of what enter in the search bar
     handleInputChange = event => {
-        this.setState({ search: event.target.value })
+        this.setState({ 
+            search: event.target.value })
     }
 
     //function to control the submit button of the search form 
@@ -67,7 +68,7 @@ class SearchBooks extends Component {
         return (
             <Container fluid>
                 <Jumbotron>
-                    <h1 className="text-white">Find Your Favorite Books with GoogleBook API</h1>
+                    <h1 className="text-black">Find Your Favorite Books By Using Google API</h1>
                 </Jumbotron>
                 <Container>
                     <Row>
