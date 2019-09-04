@@ -1,0 +1,21 @@
+.btn-primary{
+    color: #fff;
+    background-color: #b96b9f;
+    border-color: #b96b9f;
+}
+
+.btn-primary:hover {
+    color: #b96b9f;
+    background-color: #fff;
+    border-color: #b96b9f;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+    border-color: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: none;
+}

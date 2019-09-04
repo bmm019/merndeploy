@@ -29,8 +29,7 @@ class SearchBooks extends Component {
             .then(res => {
                 if (res.data.items === "error") {
                     throw new Error(res.data.items);
-                }
-                else {
+                } else  {
                     // store response in a array
                     let results = res.data.items
                     //map through the array 
@@ -48,10 +47,12 @@ class SearchBooks extends Component {
                         return result;
                     })
                     // reset the sate of the empty books array to the new arrays of objects with properties geting back from the response
-                    this.setState({ books: results, error: "" })
+                    this.setState({ 
+                        books: results, error: "" })
                 }
             })
-            .catch(err => this.setState({ error: err.items }));
+            .catch(err => this.setState({ 
+                error: err.items }));
     }
 
     handleSavedButton = event => {
@@ -83,7 +84,10 @@ class SearchBooks extends Component {
                 </Container>
                 <br></br>
                 <Container>
-                    <SearchResult books={this.state.books} handleSavedButton={this.handleSavedButton} />
+                    <SearchResult 
+                    books={this.state.books}
+                    handleSavedButton={this.handleSavedButton} 
+                     />
                 </Container>
             </Container>
         )

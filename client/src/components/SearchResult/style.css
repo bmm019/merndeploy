@@ -1,0 +1,26 @@
+.btn-danger{
+    color: #292e32;
+    background-color: #f5f5f564;
+    border-color: #292e32;
+    
+}
+
+.btn-danger:hover{
+    color: #fff;
+    background-color: #292e32;
+    border-color: #292e32;
+    
+}
+
+.btn-success{
+    background-color: #e2bebe;
+    border-color: #e2bebe;
+    margin-left: 15px;
+}
+
+.btn-success:hover{
+    color: #e2bebe;
+    background-color: #fff;
+    border-color: #e2bebe;
+    margin-left: 15px;
+}
