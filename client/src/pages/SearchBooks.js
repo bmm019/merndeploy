@@ -66,6 +66,18 @@ class SearchBooks extends Component {
                 message: alert("Your book is saved") }))
             .catch(err => console.log(err))
     }
+
+        //only show results section title if user has submitted a search
+        // renderSectionTitle() {
+        //     if (this.state.books !== undefined && this.state.search && this.state.books.length > 0) {
+        //         return <SearchResult>Displaying {this.state.books.length} Results</SearchResult>;
+        //     } else if (this.state.books.length === 0 && this.state.search) {
+        //         return <SearchResult> Results Found</SearchResult>;
+        //     } else {
+        //         return false;
+        //     }
+        // }
+ 
     render() {
         return (
             <Container fluid>
@@ -85,6 +97,7 @@ class SearchBooks extends Component {
                 <br></br>
                 <Container>
                     <SearchResult 
+                    //  renderSectionTitle={this.renderSectionTitle()}
                     books={this.state.books}
                     handleSavedButton={this.handleSavedButton} 
                      />
