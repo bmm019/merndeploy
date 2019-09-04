@@ -24,3 +24,17 @@
     border-color: #e2bebe;
     margin-left: 15px;
 }
+
+@media (max-width: 767px) {
+    p.bookDescription {
+        margin: 10px 10px 0px 50px;
+    }
+    h3.bookTitle{
+        margin: 10px 10px 0px 50px;
+        font-size: 1.5rem;
+    }
+    h4.bookAuthor{
+        margin: 10px 10px 0px 50px;
+    }
+
+}
